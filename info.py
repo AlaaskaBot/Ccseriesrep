@@ -47,20 +47,24 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # Required Media settings with defaults
-STICKER = environ.get('STICKER', 'True')
+STICKER = environ.get('STICKER', 'False')
 STICKER_ID = environ.get('STICKER_ID', "CAACAgUAAxkBAAJ0w2aZJMdpnEKbXtDVPJIvpL2XhIAhAAIrAAO8ljUq9-AkUFoHiMQeBA")
 PIC = environ.get('PIC', 'False')
 PICS = environ.get('PICS', "https://envs.sh/PSI.jpg").split()
 
 # Optional Bot messages and settings
 START_TXT = environ.get('START_TXT', "Bot Started..! And its Up and Running..!")
-NO_POSTER_FOUND_IMG = environ.get('NO_POSTER_FOUND_IMG', "https://envs.sh/kJK.jpg").split()
-SPELL_CHECK_IMAGE = environ.get('SPELL_CHECK_IMAGE', 'https://envs.sh/kJj.jpg').split()
+NO_POSTER_FOUND_IMG = environ.get('NO_POSTER_FOUND_IMG', "https://files.catbox.moe/6vug0l.png").split()
+SPELL_CHECK_IMAGE = environ.get('SPELL_CHECK_IMAGE', 'https://files.catbox.moe/wf786x.jpg').split()
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{previouscaption}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", '{previouscaption}')
 AUTO_DELETE_TIME = int(environ.get('AUTO_DELETE_TIME', 0))
-AUTO_DELETE_MSG = environ.get('AUTO_DELETE_MSG', """<blockquote>⚠️ 𝙁𝙞𝙡𝙚 𝙒𝙞𝙡𝙡 𝘽𝙚 𝘿𝙚𝙡𝙚𝙩𝙚𝙙 𝙄𝙣 10 𝙈𝙞𝙣𝙪𝙩𝙚𝙨.</blockquote>""")
+AUTO_DELETE_MSG = environ.get('AUTO_DELETE_MSG', """<blockquote>❗️❗️❗️<u>IMPORTANT</u>❗️️❗️❗️
+
+ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ 10 mins 🫥 <i>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.
+
+<b>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</b></blockquote>""")
 PROTECT_CONTENT = is_enabled(environ.get('PROTECT_CONTENT', "False"), False)
 PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "False"), False)
 PORT = environ.get('PORT', "8080")
