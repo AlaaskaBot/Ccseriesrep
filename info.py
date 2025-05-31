@@ -30,7 +30,7 @@ BOT_USERNAME = "BF_SeriesBot"
 DATABASE_URI = "mongodb+srv://SeriesDB1:SeriesDB1@cluster0.gqsvy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DATABASE_NAME = "BF_Seri"
 COLLECTION_NAME = "BF_si"
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7188908429 6451991821').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7188908429 6451991821 6773883939').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 AUTH_CHANNEL = "-1002657277896"
 REQ_CHANNEL = -1002657277896
