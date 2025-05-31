@@ -18,25 +18,25 @@ def is_enabled(value, default):
         return default
 
 # Required API Credentials and Bot Settings
-API_ID = environ['API_ID']
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
-BOT_USERNAME = environ['BOT_USERNAME']
+API_ID = "24135304"
+API_HASH = "7bdcc6969ab723de66b02e64897b7184"
+BOT_TOKEN = "6097583676:AAFIy9n4RALDt7US2xiyvjSby5NzuXh9HUQ"
+BOT_USERNAME = "BF_SeriesBot"
 #API_ID2 = environ['API_ID2']
 #API_HASH2 = environ['API_HASH2']
 #SESSION_STRING = environ['SESSION_STRING']
 
 # Required Database and Channel Settings
-DATABASE_URI = environ['DATABASE_URI']
-DATABASE_NAME = environ['DATABASE_NAME']
-COLLECTION_NAME = environ['COLLECTION_NAME']
+DATABASE_URI = "mongodb+srv://SeriesDB1:SeriesDB1@cluster0.gqsvy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+DATABASE_NAME = "BF_Seri"
+COLLECTION_NAME = "BF_si"
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['CHANNELS'].split()]
-AUTH_CHANNEL = int(environ['AUTH_CHANNEL'])
-REQ_CHANNEL = int(environ['REQ_CHANNEL'])
-LOG_CHANNEL = environ['LOG_CHANNEL']
-DB_CHANNEL = [int(ch) for ch in environ['DB_CHANNEL'].split(',')]
-RAW_DB_CHANNEL = [int(ch) for ch in environ['RAW_DB_CHANNEL'].split(',')]
+AUTH_CHANNEL = "-1002657277896"
+REQ_CHANNEL = -1002657277896
+LOG_CHANNEL = "-1002437916009"
+DB_CHANNEL = "-1002619733276".split(',')
+RAW_DB_CHANNEL = "2619733276".split(',')
 IMGBB_API_KEY = environ['IMGBB_API_KEY']
 
 # Optional settings with defaults
