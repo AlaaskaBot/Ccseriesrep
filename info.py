@@ -35,8 +35,8 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 AUTH_CHANNEL = "-1002657277896"
 REQ_CHANNEL = -1002657277896
 LOG_CHANNEL = "-1002437916009"
-DB_CHANNEL = "-1002619733276".split(',')
-RAW_DB_CHANNEL = "2619733276".split(',')
+DB_CHANNEL = [-1002619733276]
+RAW_DB_CHANNEL = [2619733276]
 IMGBB_API_KEY = "2901c1bc3e891134d8adb2a7deb19488"
 
 # Optional settings with defaults
