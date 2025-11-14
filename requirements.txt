@@ -4,7 +4,7 @@ aiohttp
 bs4==0.0.1
 datetime
 fuzzywuzzy[speedup]
-git+https://github.com/cinemagoer/cinemagoer
+git+https://github.com/Joelkb/cinemagoer
 pymongo
 motor
 marshmallow
