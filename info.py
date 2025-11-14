@@ -55,8 +55,8 @@ PICS = environ.get('PICS', "https://envs.sh/PSI.jpg").split()
 
 # Optional Bot messages and settings
 START_TXT = environ.get('START_TXT', "Bot Started..! And its Up and Running..!")
-NO_POSTER_FOUND_IMG = environ.get('NO_POSTER_FOUND_IMG', "https://files.catbox.moe/6vug0l.png").split()
-SPELL_CHECK_IMAGE = environ.get('SPELL_CHECK_IMAGE', 'https://files.catbox.moe/wf786x.jpg').split()
+NO_POSTER_FOUND_IMG = environ.get('NO_POSTER_FOUND_IMG', "https://ibb.co/Zz2dPZht").split()
+SPELL_CHECK_IMAGE = environ.get('SPELL_CHECK_IMAGE', 'https://ibb.co/DPRyQYZT').split()
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{previouscaption}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", '{previouscaption}')
